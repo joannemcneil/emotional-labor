@@ -15,6 +15,10 @@ $('.editable').each(function(){
     var random_string = getRandom(new_lines);
     text = text.replace("hi", random_string);
     
+      // replace word "today" with a random string from text file
+    var random_string = getRandom(new_lines);
+    text = text.replace("today", random_string);
+    
      // replace word "when" with a random string from text file
     var random_string = getRandom(new_lines);
     text = text.replace("when", random_string);
