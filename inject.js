@@ -11,9 +11,9 @@ $('.editable').each(function(){
     // replace periods with exclamation points
     text = text.replace(/\./g, "!!!");
 
-    // replace word "hi" with a random string from text file
+    // replace word "hi " with a random string from text file
     var random_string = getRandom(new_lines);
-    text = text.replace("hi", random_string);
+    text = text.replace("hi ", random_string);
     
       // replace word "today" with a random string from text file
     var random_string = getRandom(new_lines);
@@ -26,6 +26,14 @@ $('.editable').each(function(){
     // replace word "work" with a random string from text file
     var random_string = getRandom(new_lines);
     text = text.replace("work", random_string);
+    
+    text = text.replace ("Best,", "xoxo");
+    text = text.replace ("best,", "xoxo");
+
+    text = text.replace (", ", ". :) ");
+
+    
+    text = "Hi! Miss you!" + text 
     
     // put the modified text back into the element on the page
     $(this).html(text);
