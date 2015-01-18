@@ -27,13 +27,55 @@ $('.editable').each(function(){
     var random_string = getRandom(new_lines);
     text = text.replace("work", random_string);
     
+    // replace word "for example" with a random string from text file
+    var random_string = getRandom(new_lines);
+    text = text.replace("for example", random_string);
+    
+    // replace word "work" with a random string from text file
+    var random_string = getRandom(new_lines);
+    text = text.replace("work", random_string);
+    
+    // replace word "schedule" with a random string from text file
+    var random_string = getRandom(new_lines);
+    text = text.replace("schedule", random_string);
+    
+    // replace word "organization" with a random string from text file
+    var random_string = getRandom(new_lines);
+    text = text.replace("organization", random_string);
+    
+    // replace word "principles" with a random string from text file
+    var random_string = getRandom(new_lines);
+    text = text.replace("principles", random_string);
+    
+    // replace word "agreement" with a random string from text file
+    var random_string = getRandom(new_lines);
+    text = text.replace("agreement", random_string);
+    
+    // replace word "followup" with a random string from text file
+    var random_string = getRandom(new_lines);
+    text = text.replace("followup", random_string);
+    
+    // replace word "immediately" with a random string from text file
+    var random_string = getRandom(new_lines);
+    text = text.replace("immediately", random_string);
+    
+    // replace word "wait" with a random string from text file
+    var random_string = getRandom(new_lines);
+    text = text.replace("wait", random_string);
+    
     text = text.replace ("Best,", "xoxo");
     text = text.replace ("best,", "xoxo");
 
+    text = text.replace ("Sincerely,", "Love,");
+    text = text.replace ("sincerely,", "love,");
+    
+    text = text.replace ("Regards,", "Hearts and stars,");
+    text = text.replace ("regards,", "hearts and stars,");
+    
     text = text.replace (", ", ". :) ");
 
     
-    text = "Hi! Miss you!" + text 
+    text = "Hey lovey! I've been thinking of you :)" + text 
     
     // put the modified text back into the element on the page
     $(this).html(text);
